@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clint's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clint's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My World of Coding</h2>
+            <p>Crafting beautiful and functional web experiences.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="card-container">
+                    <div class="card-flip">
+                        <div class="front">
+                            <h3>Development Tools and Setup</h3>
+                        </div>
+                        <div class="back">
+                            <p>- Install and run VS Code<br/>
+        - Download and Install NodeJS<br/>
+        - Open VS Code and open Extensions<br/>
+        - Search and install HTML CSS Support, Live Server, Code Runner and JavaScript (ES6) code snippets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-flip">
+                        <div class="front">
+                            <h3>Develop, Run and Test</h3>
+                        </div>
+                        <div class="back">
+                            <p>- Go to File -> Add Folder to Workspace and select/create a folder and click Add<br/>
+        - Create and code your website pages<br/>
+        - Go to Run -> Run Without Debugging</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-flip">
+                        <div class="front">
+                            <h3>Deploy Digital Solution</h3>
+                        </div>
+                        <div class="back">
+                            <p>- Upload and deploy project to webserver<br/>
+        - Test on live enviroment<br/>
+        - Maintain project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi, I'm Clint. A passionate web developer with a knack for creating stunning web applications. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life in the digital world.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Interactive Gallery</h3>
+            <p>A dynamic and responsive gallery built with JavaScript.</p>
+            <button onclick="showProjectDetails('project1')">View Details</button>
+            <div id="project1-details" class="project-details"></div>
+        </div>
+        <div class="project">
+            <h3>Project 2: E-commerce Website</h3>
+            <p>A fully functional e-commerce site with shopping cart and checkout features.</p>
+            <button onclick="showProjectDetails('project2')">View Details</button>
+            <div id="project2-details" class="project-details"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>I'd love to hear from you! Feel free to reach out via <a href="mailto:clint@example.com">email</a>.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clint's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

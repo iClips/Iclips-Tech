@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6;
+    color: #374151;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #1abc9c;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*****************************
+    Welcome to my World
+    *************************/
+
+/* Make the row a flex container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.card-container {
+  height: 18rem;
+  width: 33%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  perspective: 100rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-container {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.card-flip, .front, .back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-flip {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card-flip, .back {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    border-radius: 20px;
+    border-color: #DBEAFE;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.front {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.back {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
