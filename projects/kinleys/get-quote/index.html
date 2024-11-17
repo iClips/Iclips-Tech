@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER5PGJ9PY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0ER5PGJ9PY');
+</script>
+<body>
+    <nav id="navBar">
+        <div class="nav-content">
+            <img src="kinleys_logo.png" alt="kinleys logo"> 
+            <a href="index.html" class="logo">                            
+                <h1 class="responsive nav-title">Quote Calculator</h1>
+            </a>
+            
+            <ul class="nav">
+                <li><a href="../">Go Home</a></li>
+            </ul>                                                
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                <button id="download-pdf" style="display: none;">Download PDF</button>
+                <div id="quote-result"></div>
+            </div>
+            <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">                
+                <form id="quote-form">
+                    <div>
+                        <label for="width">Width (cm):</label>
+                        <input type="number" id="width" required><br><br>    
+                    </div>
+                    <div>
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" required><br><br>
+                    </div>
+                    <div>
+                        <label for="material">Material:</label>
+                        <select id="material" required>
+                            <option value="wood">Wood</option>
+                            <option value="plastic">Plastic</option>
+                            <option value="metal">Metal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color">Color:</label>
+                        <select id="color" required>
+                            <option value="standard">Standard</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>       
+                    <button id="calculate-btn">Calculate Quote</button>
+                </form>
+                      
+            </div>            
+        </div>
+    </div>    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
