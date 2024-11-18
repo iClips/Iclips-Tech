@@ -1,311 +1,1194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <title>Iclips - Custom Software Development </title>
-    <meta name="description" content="Welcome to our world of personalized digital solutions!">
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-    
-    <link rel="canonical" href="https://www.iclips.co.za/">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta property="og:title" content="Iclips - Custom Software Development" />
-    <meta property="og:image" content="assets/images/soft-develop.jpg" />
-    <meta property="og:url" content="https://www.iclips.co.za/" />
-   
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iclips Tech</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ER5PGJ9PY"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-0ER5PGJ9PY');
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-0ER5PGJ9PY');
 </script>
+
 <body>
-    <div id="preloader">
+	<div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </div>
-    
-    <header class="header-area header-sticky">
-            <a href="index.html" class="logo">
-                Iclips
-            </a>
-        <nav class="main-nav">
-            <ul class="nav">
-                <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-                <li class="scroll-to-section"><a href="#about" class="menu-item">About Us</a></li>
-                <li class="scroll-to-section"><a href="#types" class="menu-item">What We Do</a></li>
-                <li class="scroll-to-section"><a href="#projects" class="menu-item">Project Presentations</a></li>
-                <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-            </ul>
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-        </nav>
-    </header>
+	<header>
+		<nav class="main-nav">
+			<div class="logo-wrapper">
+				<div class="logo-border">
+					<img src="assets/images/logo-it.png" alt="Logo" class="logo-img">
+				</div>
+				<h1 class="logo responsive">
+					<span class="b">I</span>
+					<span class="y">c</span>
+					<span class="g">l</span>
+					<span class="r">i</span>
+					<span class="b">p</span>
+					<span class="y">s</span>
+					<span class="break">&nbsp;</span>
+					<span class="g">T</span>
+					<span class="r">e</span>
+					<span class="b">c</span>
+					<span class="y">h</span>
+				</h1>
+			</div>
+			<button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+			<ul class="nav">
+				<li class="scroll-to-section"><a href="#welcome" class="menu-item responsive">Home</a></li>
+				<li class="scroll-to-section"><a href="#about" class="menu-item responsive">About Us</a></li>
+				<li class="scroll-to-section"><a href="#types" class="menu-item responsive">What We Do</a></li>
+				<li class="scroll-to-section"><a href="#projects" class="menu-item responsive">Demonstrations</a></li>
+				<li class="scroll-to-section"><a href="#contact-us" class="menu-item responsive">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
 
-
-    <section class="welcome-area" id="welcome">
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="left-text col-12 col-lg-6">
-                        <h1>Custom <em>SOFTWARE </em>Development</h1>
-                        <p>Welcome to our world of personalized digital solutions! Picture having your own custom app, whether it's for mobile, operations management, or a website. At our fingertips, we craft tailored experiences for you, making the process seamless and stress-free. Let's turn your vision into a reality effortlessly.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Modal Structure -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="budget-modal">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2 id="modal-heading"></h2>
+            <p id="modal-description"></p>
+            <button onclick="closeModal()">Close</button>
         </div>
-    </section>
+    </div>
+	<section id="welcome" class="hero">
+		<div class="spacer-for-scroll"></div>	
+		<div class="spacer-for-scroll"></div>	
+		<div class="div-hero">			
+			<h2 id="welcome_show" class="tag slide-in-bottom responsive">Welcome to our world of personalized digital solutions! Custom app solutions designed to fit your vision and your wallet. From basic needs to premium features, we have something for everyone.</h2>
 
-    <section class="section" id="about">
-        <div class="center-heading">
-            <h2>Discover Our <em>Process</em></h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <div class="features-item">
-                            <div class="features-icon">
-                                <h2>01</h2>
-                                <img src="assets/images/features-icon-1.png" alt="">
-                                <h4>Identifying the Challenge</h4>
-                                <p>We kick off by thoroughly understanding your needs and challenges. Our team dives deep into uncovering the root of the problem, ensuring we grasp every nuance and detail to pave the way for a robust solution.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                        <div class="features-item">
-                            <div class="features-icon">
-                                <h2>02</h2>
-                                <img src="assets/images/features-icon-2.png" alt="">
-                                <h4>Crafting Tailored Solutions</h4>
-                                <p>Armed with insights, we craft bespoke solutions tailored to your needs. Our approach blends creativity, innovation, and expertise to tackle current challenges and build a strong foundation for future growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                        <div class="features-item">
-                            <div class="features-icon">
-                                <h2>03</h2>
-                                <img src="assets/images/features-icon-3.png" alt="">
-                                <h4>Seamless Product Deployment</h4>
-                                <p>Once the solution is perfected, we transition to deployment. Whether it's a mobile app, CMS, or website, our meticulous process ensures a seamless rollout, minimizing disruptions and maximizing user satisfaction.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="slider-container">
+				<div class="instruction-note">Move the slider to estimate what you can expect within your budget.</div>
+				<input type="range" min="0" max="100" value="20" step="20" class="slider" id="projectSlider">
+				<div class="slider-indicator">
+					<h3 class="responsive">Budget (+-): R<span id="progressValue">2000</span></h3>
+				</div>
+			</div>
 
-    <section id="types" style="padding-top: 100px;">
-        <div class="center-heading">
-            <h2>Digital<em> Solutions </em>Tailored to You</h2>
-        </div>    
-        <div class="left-image-decor"></div>
-    
-        <!-- ***** Features Big Item Start ***** -->
-        <div class="section" id="promotion">
-            
-                <div class="container">
-                    <div class="row">
-                        <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                        </div>
-                        <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                            <ul>
-                                <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                                    <img src="assets/images/about-icon-01.png" alt="">
-                                    <div class="text">
-                                        <h4>Websites</h4>
-                                        <p>Elevate your online presence with captivating websites that showcase your offerings in style. Our interactive designs not only capture attention but also keep your clients engaged and enthusiastic about your products and services. Let us transform your vision into a dynamic online experience.</p>
-                                    </div>
-                                </li>
-                                <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                                    <img src="assets/images/about-icon-02.png" alt="">
-                                    <div class="text">
-                                        <h4>Operational Systems</h4>
-                                        <p>Streamline your business operations with intuitive operational systems accessible from anywhere, be it your laptop or mobile device. From generating quotations and managing invoices to handling orders seamlessly, our systems empower you to efficiently manage every aspect of your business while maintaining comprehensive records with ease.</p>
-                                    </div>
-                                </li>
-                                <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                                    <img src="assets/images/about-icon-03.png" alt="">
-                                    <div class="text">
-                                        <h4>Mobile Apps</h4>
-                                        <p>Turn your app vision into a tangible reality with our end-to-end mobile app development expertise. From conceptualization to launch, we guide you through every step of the process, ensuring your app stands out in the crowded app store landscape. Let us help you bring your dream app to life and make a lasting impact in the digital realm.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-    
-    <section id="projects" style="padding-top: 100px;">
-        <div class="center-heading">
-            <h2>Checkout <em>Our Demo </em>Projects</h2>
-        </div>    
-        <div class="left-image-decor"></div>
-    
-        <div class="section" id="demo_projects">
-            <div class="container">
-                <div class="row">
-                    <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                    </div>
-                    <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                        <ul>
-                            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                                <img src="assets/images/about-icon-01.png" alt="">
-                                <div class="text">
-                                    <a href="/projects/iact" class="logo"><h4>Imagine act</h4></a>
-                                    <p>Use your imagination to buy things and with the belief that it could happen you will make it real in your experience to the degree of the effort you put in.</p>
-                                </div>
-                            </li>
-                            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                                <img src="assets/images/about-icon-02.png" alt="">
-                                <div class="text">
-                                    <a href="/projects/windowblinds" class="logo"><h4>Window blinds demo</h4></a>
-                                    <p>Transform your windows with stunning blinds. Experience unparalleled elegance and functionality with our custom blinds, tailored to fit any window and style.</p>
-                                </div>
-                            </li>
-                            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                                <img src="assets/images/about-icon-02.png" alt="">
-                                <div class="text">
-                                    <a href="/projects/constr" class="logo"><h4>Construction demo</h4></a>
-                                    <p>For clients looking to build a unique home tailored to their specific needs and preferences, Construction could offer custom home building services. This includes working closely with clients through the design, planning, and construction phases to create a personalized residence.</p>
-                                </div>
-                            </li>
-                            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                                <img src="assets/images/about-icon-03.png" alt="">
-                                <div class="text">
-                                    <a href="/projects/bustracker" class="logo"><h4>Bus tracker</h4></a>
-                                    <p>Turn your app vision into a tangible reality with our end-to-end mobile app development expertise. From conceptualization to launch, we guide you through every step of the process, ensuring your app stands out in the crowded app store landscape. Let us help you bring your dream app to life and make a lasting impact in the digital realm.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="right-image-decor"></div>
+			<div class="project-demo tag slide-in-bottom" id="demoContainer">
+				<!-- Multiple stages of the project -->
 
-   
-    <footer id="contact-us">
-        <div class="center-heading">
-            <h2><em>Contact Us </em>- Lets talk</h2>
-        </div>    
-        <div class="container">
-            <div class="footer-content">
-                <div class="row">
-                    <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="contact-form">
-                            <form onsubmit="return false" id="contact" action="" method="post">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
-                                                style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="email" type="email" id="email" placeholder="E-Mail Address"
-                                                required="" style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="btn_submit_message" class="main-button">Send Message
-                                                Now</button>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div id="div_message_alert" class="alert alert-primary" role="alert">
-                                          This is a primary alert—check it out!
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ***** Contact Form End ***** -->
-                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>Iclips</em></h2>
-                        <p>Iclips is your premier destination for custom digital software solutions. Our dedicated team of developers specializes in crafting tailored software to meet your unique needs. From sleek mobile apps to robust enterprise solutions, we are committed to delivering excellence in every project. 
-                            <br><br>Ready to bring your ideas to life? Contact us today and let's build something amazing together!</p>
-                        <ul class="social">
-                            <li><a href="https://www.facebook.com/iclips.co.za"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://wa.me/+27791873972?text=Dear Iclips"><span class="fa fa-whatsapp"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>Copyright &copy; 2010 Iclips Landing Page
+				<!-- Stage 1: Basic Layout -->
+				<div class="project-stage active" id="stage-1" onclick="openModal('Basic Package - Entry Level', 'Price: 2000 Rand Project Stage:  Essential Setup Description: This package provides a foundational web presence. It includes a simple yet effective design with essential elements to get your project started. You\'ll have: Header: Featuring your logo and main navigation links (Home, About, Contact). Content Block: A dedicated space for your primary message or offerings. Footer: A clean section for copyright  information and contact details. Deliverables: Logo placement Basic content structure Navigation setup Responsive layout')">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+						<!-- Header with Logo and Menu -->
+						<rect x="100" y="50" width="600" height="80" fill="#333" />
 
-                        | Designed by Us</p>
-                        <strong><p><a href="https://www.iclips.co.za/terms">View our Terms and Conditions</a></p></strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+						<!-- Logo -->
+						<circle cx="130" cy="90" r="20" fill="#FFB74D" />
+						<text x="130" y="95" fill="black" font-size="18" text-anchor="middle"
+							font-weight="bold">L</text>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+						<!-- Project Name -->
+						<text x="250" y="95" fill="white" font-size="25" text-anchor="middle" font-weight="bold">Project
+							Name</text>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+						<!-- Menu Items -->
+						<text x="500" y="95" fill="white" font-size="18" text-anchor="middle">Home</text>
+						<text x="560" y="95" fill="white" font-size="18" text-anchor="middle">About</text>
+						<text x="630" y="95" fill="white" font-size="18" text-anchor="middle">Contact</text>
 
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
+						<!-- Website Content Block -->
+						<rect x="100" y="150" width="600" height="300" fill="#0078d4" />
+						<text x="400" y="300" fill="white" font-size="20" text-anchor="middle">Website Content</text>
 
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/message.js"></script>
+						<!-- Add-on: Hero Image Block -->
+						<rect x="120" y="170" width="560" height="150" fill="#00bfa5" />
+						<text x="400" y="190" fill="white" font-size="16" text-anchor="middle">Hero Section
+							Add-on</text>
+
+						<!-- Add-on: Feature Cards -->
+						<rect x="150" y="330" width="150" height="80" fill="#ff5722" />
+						<text x="225" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 1</text>
+
+						<rect x="325" y="330" width="150" height="80" fill="#8bc34a" />
+						<text x="400" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 2</text>
+
+						<rect x="500" y="330" width="150" height="80" fill="#03a9f4" />
+						<text x="575" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 3</text>
+
+						<!-- Add-on: Hero Image Block -->
+						<rect x="120" y="170" width="560" height="150" fill="#00bfa5" />
+						<text x="400" y="190" fill="white" font-size="16" text-anchor="middle">Hero Section
+							Add-on</text>
+
+						<!-- Add-on: Feature Cards -->
+						<rect x="150" y="330" width="150" height="80" fill="#ff5722" />
+						<text x="225" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 1</text>
+
+						<rect x="325" y="330" width="150" height="80" fill="#8bc34a" />
+						<text x="400" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 2</text>
+
+						<rect x="500" y="330" width="150" height="80" fill="#03a9f4" />
+						<text x="575" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 3</text>
+
+						<!-- Footer -->
+						<rect x="100" y="460" width="600" height="30" fill="#333" />
+						<text x="400" y="480" fill="white" font-size="15" text-anchor="middle">Footer</text>
+						
+					</svg>
+				</div>
+
+				<!-- Stage 2: Social Links and Pages -->
+				<div class="project-stage" id="stage-2">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+						<!-- Header with Logo and Menu -->
+						<rect x="100" y="50" width="600" height="80" fill="#333" />
+
+						<!-- Logo -->
+						<circle cx="130" cy="90" r="20" fill="#FFB74D" />
+						<text x="130" y="95" fill="black" font-size="18" text-anchor="middle"
+							font-weight="bold">L</text>
+
+						<!-- Project Name -->
+						<text x="250" y="95" fill="white" font-size="25" text-anchor="middle" font-weight="bold">Project
+							Name</text>
+
+						<!-- Menu Items -->
+						<text x="500" y="95" fill="white" font-size="18" text-anchor="middle">Home</text>
+						<text x="560" y="95" fill="white" font-size="18" text-anchor="middle">About</text>
+						<text x="630" y="95" fill="white" font-size="18" text-anchor="middle">Contact</text>
+
+
+						<!-- Website Content Block -->
+						<rect x="100" y="150" width="600" height="300" fill="#0078d4" />
+						<text x="400" y="300" fill="white" font-size="20" text-anchor="middle">Website Content</text>
+
+						<!-- Add-on: Hero Image Block -->
+						<rect x="120" y="170" width="560" height="150" fill="#00bfa5" />
+						<text x="400" y="190" fill="white" font-size="16" text-anchor="middle">Hero Section
+							Add-on</text>
+
+						<!-- Add-on: Feature Cards -->
+						<rect x="150" y="330" width="150" height="80" fill="#ff5722" />
+						<text x="225" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 1</text>
+
+						<rect x="325" y="330" width="150" height="80" fill="#8bc34a" />
+						<text x="400" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 2</text>
+
+						<rect x="500" y="330" width="150" height="80" fill="#03a9f4" />
+						<text x="575" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 3</text>
+
+						<rect x="100" y="460" width="600" height="30" fill="#333" />
+						<text x="440" y="480" fill="white" font-size="15" text-anchor="middle">Social Links</text>
+
+						<!-- Social Links -->
+						<circle cx="200" cy="475" r="10" fill="#4267B2" />
+						<circle cx="250" cy="475" r="10" fill="#1DA1F2" />
+						<circle cx="300" cy="475" r="10" fill="#FF4500" />
+						<circle cx="350" cy="475" r="10" fill="#FFFC00" />
+					</svg>
+				</div>
+
+				<!-- Stage 3: API Integration -->
+				<div class="project-stage" id="stage-3">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+						<!-- Header with Logo and Menu -->
+						<rect x="100" y="50" width="600" height="80" fill="#333" />
+
+						<!-- Logo -->
+						<circle cx="130" cy="90" r="20" fill="#FFB74D" />
+						<text x="130" y="95" fill="black" font-size="18" text-anchor="middle"
+							font-weight="bold">L</text>
+
+						<!-- Project Name -->
+						<text x="250" y="95" fill="white" font-size="25" text-anchor="middle" font-weight="bold">Project
+							Name</text>
+
+						<!-- Menu Items -->
+						<text x="500" y="95" fill="white" font-size="18" text-anchor="middle">Home</text>
+						<text x="560" y="95" fill="white" font-size="18" text-anchor="middle">About</text>
+						<text x="630" y="95" fill="white" font-size="18" text-anchor="middle">Contact</text>
+
+						<!-- Website Content Block -->
+						<rect x="100" y="150" width="600" height="300" fill="#0078d4" />
+						<text x="400" y="300" fill="white" font-size="20" text-anchor="middle">Website Content</text>
+
+						<!-- Add-on: Hero Image Block -->
+						<rect x="120" y="170" width="560" height="150" fill="#00bfa5" />
+						<text x="400" y="190" fill="white" font-size="16" text-anchor="middle">Hero Section
+							Add-on</text>
+
+						<!-- Add-on: Feature Cards -->
+						<rect x="150" y="330" width="150" height="80" fill="#ff5722" />
+						<text x="225" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 1</text>
+
+						<rect x="325" y="330" width="150" height="80" fill="#8bc34a" />
+						<text x="400" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 2</text>
+
+						<rect x="500" y="330" width="150" height="80" fill="#03a9f4" />
+						<text x="575" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 3</text>
+						<rect x="100" y="460" width="600" height="30" fill="#333" />
+						<text x="440" y="480" fill="white" font-size="15" text-anchor="middle">Social Links</text>
+
+						<!-- API Integration: Emails & Banking -->
+						<rect x="150" y="200" width="200" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="250" y="230" fill="#333" font-size="20" text-anchor="middle">Process Feature</text>
+						<rect x="450" y="200" width="200" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="550" y="230" fill="#333" font-size="20" text-anchor="middle">Process Feature</text>
+
+						<!-- Social Links -->
+						<circle cx="200" cy="475" r="10" fill="#4267B2" />
+						<circle cx="250" cy="475" r="10" fill="#1DA1F2" />
+						<circle cx="300" cy="475" r="10" fill="#FF4500" />
+						<circle cx="350" cy="475" r="10" fill="#FFFC00" />
+					</svg>
+				</div>
+
+				<!-- Stage 4: Mobile App Integration -->
+				<div class="project-stage" id="stage-4">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+						<!-- Header with Logo and Menu -->
+						<rect x="100" y="50" width="600" height="80" fill="#333" />
+
+						<!-- Logo -->
+						<circle cx="130" cy="90" r="20" fill="#FFB74D" />
+						<text x="130" y="95" fill="black" font-size="18" text-anchor="middle"
+							font-weight="bold">L</text>
+
+						<!-- Project Name -->
+						<text x="250" y="95" fill="white" font-size="25" text-anchor="middle" font-weight="bold">Project
+							Name</text>
+
+						<!-- Menu Items -->
+						<text x="500" y="95" fill="white" font-size="18" text-anchor="middle">Home</text>
+						<text x="560" y="95" fill="white" font-size="18" text-anchor="middle">About</text>
+						<text x="630" y="95" fill="white" font-size="18" text-anchor="middle">Contact</text>
+
+						<!-- Website Content Block -->
+						<rect x="100" y="150" width="600" height="300" fill="#0078d4" />
+						<text x="400" y="300" fill="white" font-size="20" text-anchor="middle">Website Content</text>
+
+						<!-- Add-on: Hero Image Block -->
+						<rect x="120" y="170" width="560" height="150" fill="#00bfa5" />
+						<text x="400" y="190" fill="white" font-size="16" text-anchor="middle">Hero Section
+							Add-on</text>
+
+						<!-- Add-on: Feature Cards -->
+						<rect x="150" y="330" width="150" height="80" fill="#ff5722" />
+						<text x="225" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 1</text>
+
+						<rect x="325" y="330" width="150" height="80" fill="#8bc34a" />
+						<text x="400" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 2</text>
+
+						<rect x="500" y="330" width="150" height="80" fill="#03a9f4" />
+						<text x="575" y="370" fill="white" font-size="14" text-anchor="middle">Feature Card 3</text>
+						<rect x="100" y="460" width="600" height="30" fill="#333" />
+						<text x="440" y="480" fill="white" font-size="15" text-anchor="middle">Social Links</text>
+
+						<!-- API Integration: Emails & Banking -->
+						<rect x="150" y="200" width="200" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="250" y="230" fill="#333" font-size="20" text-anchor="middle">Process Feature</text>
+						<rect x="450" y="200" width="200" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="550" y="230" fill="#333" font-size="20" text-anchor="middle">Process Feature</text>
+
+						<!-- Social Links -->
+						<circle cx="200" cy="475" r="10" fill="#4267B2" />
+						<circle cx="250" cy="475" r="10" fill="#1DA1F2" />
+						<circle cx="300" cy="475" r="10" fill="#FF4500" />
+						<circle cx="350" cy="475" r="10" fill="#FFFC00" />
+
+						<!-- Mobile App -->
+						<rect x="630" y="100" width="150" height="300" fill="#111" stroke="white" stroke-width="3"
+							rx="15" />
+						<circle cx="705" cy="380" r="10" fill="white" />
+						<rect x="650" y="130" width="110" height="200" fill="#0078d4" />
+						<text x="705" y="220" fill="white" font-size="14" text-anchor="middle">Mobile App Integration</text>
+						<text x="705" y="240" fill="white" font-size="14" text-anchor="middle">E-commerce Setup</text>
+						<text x="705" y="260" fill="white" font-size="14" text-anchor="middle">SEO Optimization</text>
+					</svg>
+				</div>
+
+				<!-- Stage 5: More -->
+				<div class="project-stage" id="stage-5">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+						<!-- Central Server -->
+						<rect x="300" y="100" width="200" height="150" fill="#333" stroke="white" stroke-width="2" />
+						<text x="400" y="150" fill="white" font-size="18" text-anchor="middle">Central Server</text>
+						<text x="400" y="180" fill="white" font-size="12" text-anchor="middle">Database</text>
+
+						<!-- Admin Users -->
+						<rect x="50" y="20" width="180" height="100" fill="#4CAF50" stroke="black" stroke-width="2" />
+						<text x="140" y="60" fill="white" font-size="14" text-anchor="middle">Admin Users</text>
+						<text x="140" y="80" fill="white" font-size="10" text-anchor="middle">Product Info
+							(example)</text>
+
+						<!-- Payroll Users -->
+						<rect x="570" y="30" width="180" height="100" fill="#FF9800" stroke="black" stroke-width="2" />
+						<text x="660" y="60" fill="white" font-size="14" text-anchor="middle">Payroll Users</text>
+						<text x="660" y="80" fill="white" font-size="10" text-anchor="middle">Manage Payroll
+							(example)</text>
+
+						<!-- Connection lines -->
+						<line x1="230" y1="100" x2="300" y2="175" stroke="black" stroke-width="2" />
+						<line x1="570" y1="100" x2="500" y2="175" stroke="black" stroke-width="2" />
+
+						<!-- API Integration -->
+						<rect x="200" y="300" width="150" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="275" y="340" fill="#333" font-size="16" text-anchor="middle">Process Feature</text>
+
+						<rect x="450" y="300" width="150" height="80" fill="white" stroke="#333" stroke-width="2" />
+						<text x="525" y="340" fill="#333" font-size="16" text-anchor="middle">Process Feature</text>
+
+						<!-- Connection lines from Server to APIs -->
+						<line x1="400" y1="250" x2="275" y2="300" stroke="black" stroke-width="2" />
+						<line x1="400" y1="250" x2="525" y2="300" stroke="black" stroke-width="2" />
+
+						<!-- Social Links (for Footer) -->
+						<rect x="100" y="460" width="600" height="30" fill="#333" />
+						<text x="400" y="480" fill="white" font-size="15" text-anchor="middle">Social Links</text>
+
+						<circle cx="200" cy="475" r="10" fill="#4267B2" />
+						<circle cx="250" cy="475" r="10" fill="#1DA1F2" />
+						<circle cx="300" cy="475" r="10" fill="#FF4500" />
+						<circle cx="350" cy="475" r="10" fill="#FFFC00" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<main>
+
+		<section id="about" class="about-us">
+			<div class="spacer-for-scroll"></div>
+			<div class="center-heading tag slide-in-top">
+				<h2 class="responsive">About Us -<em> Who We Are </em> and What We Do</h2>
+			</div>
+			<div style="color: #fff; padding: 20px;">
+				<p class="responsive">At <strong>Iclips Tech</strong>, we are the architects of innovation, crafting
+					digital solutions that transcend the ordinary. We specialize in creating custom software, websites
+					and mobile applications tailored to your vision...</p>
+				<p class="responsive"><strong>Iclips Tech</strong> was founded with two core principles in mind:
+					<strong>accessibility</strong> for all and delivering top-notch <strong>solutions</strong> to
+					everyone, regardless of their budget. Whether you're managing 100 bucks or 100 million bucks, our
+					solutions are crafted with <strong>you in mind</strong>.
+				</p>
+				<p class="responsive"><strong>User-friendliness, effectiveness, efficiency, and constant
+						innovation</strong> form the bedrock of Iclips Tech. We are not just about solving problems; we
+					are dedicated to <strong>pioneering</strong> new ways to address challenges, creating tools that
+					exceed expectations, and crafting solutions that fit seamlessly into your lifestyle or business.
+				</p>
+				<p class="responsive">
+					Our services go far beyond software development. With an <strong>extensive knowledge base</strong>
+					in both hardware and software, we can provide advice on hardware setups, create seamless automations
+					by integrating devices, and—yes—fix your kettle! Our expertise ensures that the solutions we deliver
+					are not only innovative but <strong>robust and reliable</strong>, designed to handle the most
+					complex challenges.
+				</p>
+			</div>
+			<div class="illustrations">
+				<!-- Team Collaboration -->
+				<div class="svg-icon" onclick="toggleDetails(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<circle cx="30" cy="30" r="20" fill="#3498db" />
+						<circle cx="70" cy="30" r="20" fill="#e74c3c" />
+						<circle cx="50" cy="70" r="20" fill="#2ecc71" />
+						<path d="M30,50 C50,80 70,50 50,50" stroke="#34495e" stroke-width="2" fill="none" />
+					</svg>
+				</div>
+
+				<!-- Personalized Solutions -->
+				<div class="svg-icon" onclick="toggleDetails(2)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="20" y="20" width="60" height="60" fill="#f39c12" />
+						<text x="50" y="55" font-size="14" text-anchor="middle" fill="#fff">Tailored</text>
+						<text x="50" y="70" font-size="14" text-anchor="middle" fill="#fff">Solutions</text>
+					</svg>
+				</div>
+
+				<!-- Innovative Development -->
+				<div class="svg-icon" onclick="toggleDetails(3)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="10" y="10" width="80" height="80" fill="#8e44ad" />
+						<circle cx="50" cy="50" r="20" fill="#f1c40f" />
+						<line x1="10" y1="10" x2="90" y2="90" stroke="#fff" stroke-width="3" />
+					</svg>
+				</div>
+
+				<!-- User Experience -->
+				<div class="svg-icon" onclick="toggleDetails(4)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<ellipse cx="50" cy="50" rx="30" ry="20" fill="#16a085" />
+						<ellipse cx="50" cy="50" rx="15" ry="10" fill="#fff" />
+						<path d="M30,60 C40,70 60,70 70,60" stroke="#fff" stroke-width="2" fill="none" />
+					</svg>
+				</div>
+
+				<!-- Advanced Technology -->
+				<div class="svg-icon" onclick="toggleDetails(5)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="20" y="20" width="60" height="60" fill="#d35400" />
+						<line x1="20" y1="20" x2="80" y2="80" stroke="#fff" stroke-width="4" />
+						<line x1="20" y1="80" x2="80" y2="20" stroke="#fff" stroke-width="4" />
+					</svg>
+				</div>
+
+				<!-- Seamless Integration -->
+				<div class="svg-icon" onclick="toggleDetails(6)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="20" y="30" width="60" height="40" fill="#2980b9" />
+						<rect x="30" y="40" width="40" height="40" fill="#fff" />
+					</svg>
+				</div>
+
+				<!-- IoT Solutions -->
+				<div class="svg-icon" onclick="toggleDetails(7)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="30" fill="#27ae60" />
+						<path d="M40 30 C40 50 60 50 60 30" stroke="#fff" stroke-width="4" />
+						<line x1="50" y1="50" x2="50" y2="70" stroke="#fff" stroke-width="4" />
+					</svg>
+				</div>
+
+				<!-- Client-Centric Approach -->
+				<div class="svg-icon" onclick="toggleDetails(8)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="10" y="20" width="80" height="60" fill="#e67e22" />
+						<circle cx="50" cy="50" r="15" fill="#fff" />
+						<text x="50" y="55" font-size="10" text-anchor="middle" fill="#e67e22">Client</text>
+					</svg>
+				</div>
+
+				<!-- Continuous Support -->
+				<div class="svg-icon" onclick="toggleDetails(9)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<rect x="10" y="10" width="80" height="80" fill="#3498db" />
+						<circle cx="50" cy="50" r="20" fill="#fff" />
+						<text x="50" y="55" font-size="12" text-anchor="middle" fill="#3498db">Support</text>
+					</svg>
+				</div>
+
+				<!-- Future-Focused Vision -->
+				<div class="svg-icon" onclick="toggleDetails(10)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+						<polygon points="50,10 90,90 10,90" fill="#8e44ad" />
+						<circle cx="50" cy="50" r="15" fill="#fff" />
+						<text x="50" y="55" font-size="10" text-anchor="middle" fill="#8e44ad">Future</text>
+					</svg>
+				</div>
+			</div>
+			<div id="details" class="details">
+				<p id="detail-text">Click on an illustration to learn more!</p>
+			</div>
+		</section>
+
+		<section id="types" class="content-box">
+			<div class="spacer-for-scroll"></div>
+			<div class="center-heading tag slide-in-top">
+				<h2 class="responsive">Digital<em> Solutions </em>Tailored to You</h2>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+							<div class="scene">
+								<div class="cube">									
+									<div class="front face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Iclips Tech</p>											
+											</div>
+										</div>
+									</div>
+
+									<div class="back face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Imagine Tomorrow</p>											
+											</div>
+										</div>
+									</div>
+
+									<div class="right face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Innovate Together</p>											
+											</div>
+										</div>
+									</div>
+
+									<div class="left face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Inspire Triumph</p>											
+											</div>
+										</div>
+									</div>
+
+									<div class="top face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Invent Tools</p>											
+											</div>
+										</div>
+									</div>
+
+									<div class="bottom face">
+										<div class="background-container">
+											<div class="background-content">
+												
+											</div>
+											<div class="foreground-content">		
+												<p class="glow-text responsive">Improve Technology</p>											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="right-text col-12 col-md-6">
+						<ul>
+							<li class="tag slide-in-right">
+								<svg width="100" height="100" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+									<!-- Laptop Body -->
+									<rect x="10" y="10" width="160" height="120" rx="10" fill="#4db8ff" />
+									<!-- Laptop Screen -->
+									<rect x="20" y="20" width="140" height="70" fill="#ffffff" />
+									<!-- Keyboard Base -->
+									<rect x="20" y="95" width="140" height="30" fill="#cccccc" rx="2" />
+
+									<!-- Left Hand Typing -->
+									<path d="M45 115 Q 50 110 55 115 T 65 115 Q 60 110 55 105 Q 50 110 45 115 Z"
+										fill="#ffcc99" />
+
+									<!-- Right Hand Typing -->
+									<path d="M135 115 Q 140 110 145 115 T 155 115 Q 150 110 145 105 Q 140 110 135 115 Z"
+										fill="#ffcc99" />
+
+									<!-- Moving Code Snippets (Animated with CSS) -->
+									<g class="code-snippet"
+										style="transform-origin: 50px 70px; animation: move-snippet-1 3s infinite alternate ease-in-out;">
+										<rect x="30" y="40" width="140" height="30" fill="#007acc" />
+										<text x="35" y="48" font-family="Arial" font-size="12" fill="#ffffff">Client
+											Server Applications</text>
+									</g>
+
+									<g class="code-snippet"
+										style="transform-origin: 140px 70px; animation: move-snippet-2 3s infinite alternate ease-in-out;">
+										<rect x="90" y="75" width="90" height="10" fill="#005f99" />
+										<text x="95" y="83" font-family="Arial" font-size="8" fill="#ffffff">Management
+											Systems</text>
+									</g>
+
+									<g class="code-snippet"
+										style="transform-origin: 120px 65px; animation: move-snippet-3 3s infinite alternate ease-in-out;">
+										<rect x="60" y="85" width="65" height="10" fill="#00b3b3" />
+										<text x="65" y="93" font-family="Arial" font-size="8" fill="#ffffff">Mobile
+											Apps</text>
+									</g>
+
+									<g class="code-snippet"
+										style="transform-origin: 70px 80px; animation: move-snippet-4 3s infinite alternate ease-in-out;">
+										<rect x="70" y="80" width="45" height="10" fill="#009999" />
+										<text x="75" y="88" font-family="Arial" font-size="8"
+											fill="#ffffff">Websites</text>
+									</g>
+								</svg>
+
+								<!-- Text Section -->
+								<div class="text">
+									<h4 class="responsive">Hands-on Programming and Web Development</h4>
+									<p class="responsive">
+										IClips focuses on intense programming with code snippets dynamically evolving
+										and moving, representing the innovative work being done behind the scenes in
+										mobile and web application development.
+									</p>
+								</div>
+							</li>
+							<li class="tag slide-in-right"
+								data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+								<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+									<rect width="100" height="100" fill="#4db8ff" rx="10"
+										style="animation: fade-in 3s infinite ease-in-out forwards; opacity: 0;" />
+									<path
+										d="M10 10 H90 A5 5 0 0 1 95 15 V85 A5 5 0 0 1 90 90 H10 A5 5 0 0 1 5 85 V15 A5 5 0 0 1 10 10 Z"
+										fill="#007acc" />
+									<line x1="20" y1="30" x2="80" y2="30" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round"
+										style="animation:fade-in 2s infinite alternate  ease-in-out" />
+									<line x1="20" y1="50" x2="80" y2="50" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round"
+										style="animation: slide-in 2s infinite alternate  ease-in-out" />
+									<line x1="20" y1="70" x2="80" y2="70" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round"
+										style="animation: fade-up 2s infinite alternate  ease-in-out" />
+								</svg>
+								<div class="text">
+									<h4 class="responsive">Software Development and Integration</h4>
+									<p class="responsive">IClips provides custom software development tailored to unique
+										business needs, helping clients build scalable, high-performance applications.
+										In addition to creating new solutions, IClips excels in integrating existing
+										platforms and tools, ensuring seamless operation and enhanced productivity
+										across all digital infrastructures.</p>
+								</div>
+							</li>
+							<li class="tag slide-in-right"
+								data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+								<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+									<!-- Background -->
+									<rect width="100" height="100" fill="#4db8ff" rx="10" />
+
+									<!-- Central Hub (Circle) -->
+									<circle cx="50" cy="50" r="20" fill="#007acc" />
+
+									<!-- Connecting Lines (Devices) -->
+									<line x1="50" y1="50" x2="80" y2="20" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round" style="animation: pulse 2s infinite;" />
+									<line x1="50" y1="50" x2="20" y2="20" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round" style="animation: pulse 2s infinite 0.2s;" />
+									<line x1="50" y1="50" x2="80" y2="80" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round" style="animation: pulse 2s infinite 0.4s;" />
+									<line x1="50" y1="50" x2="20" y2="80" stroke="#005f99" stroke-width="4"
+										stroke-linecap="round" style="animation: pulse 2s infinite 0.6s;" />
+
+									<!-- Signal Waves (Animating the connectivity) -->
+									<circle cx="50" cy="50" r="30" fill="none" stroke="#ffffff" stroke-width="1"
+										opacity="0.6" style="animation: ripple 2s infinite;" />
+									<circle cx="50" cy="50" r="40" fill="none" stroke="#ffffff" stroke-width="1"
+										opacity="0.3" style="animation: ripple 2s infinite 0.5s;" />
+
+									<!-- Devices (Smaller shapes representing connected devices) -->
+									<rect x="15" y="15" width="10" height="10" fill="#005f99"
+										style="animation: device-blink 2s infinite 0.3s;" />
+									<rect x="75" y="15" width="10" height="10" fill="#005f99"
+										style="animation: device-blink 2s infinite 0.4s;" />
+									<rect x="15" y="75" width="10" height="10" fill="#005f99"
+										style="animation: device-blink 2s infinite 0.5s;" />
+									<rect x="75" y="75" width="10" height="10" fill="#005f99"
+										style="animation: device-blink 2s infinite 0.6s;" />
+
+									<!-- CSS Animations -->
+									<style>
+										@keyframes pulse {
+											0% {
+												stroke-width: 4;
+											}
+
+											50% {
+												stroke-width: 6;
+											}
+
+											100% {
+												stroke-width: 4;
+											}
+										}
+
+										@keyframes ripple {
+											0% {
+												r: 30;
+												opacity: 0.6;
+											}
+
+											100% {
+												r: 50;
+												opacity: 0;
+											}
+										}
+
+										@keyframes device-blink {
+
+											0%,
+											100% {
+												fill: #005f99;
+											}
+
+											50% {
+												fill: #00b3b3;
+											}
+										}
+									</style>
+								</svg>
+
+								<div class="text">
+									<h4 class="responsive">Internet of Things (IoT)</h4>
+									<p class="responsive">IClips specializes in creating smart, connected systems that
+										enable real-time monitoring and automation across various industries. From smart
+										homes and cities to industrial automation and healthcare, IClips delivers
+										innovative IoT solutions that streamline processes, enhance efficiency, and
+										provide actionable data insights for better decision-making.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="content-box">
+			<div class="center-heading">
+				<h2 class="responsive">Explore <em>Our Demo </em>Projects</h2>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="right-text col-12 col-md-6">
+						<ul>
+							<li class="tag slide-in-right">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+									<path d="M50 15 C40 10, 20 25, 35 45 S65 45, 80 25 C60 10, 60 10, 50 15"
+										fill="#6d391b" />
+									<!-- Head -->
+									<circle cx="50" cy="30" r="15" fill="#ff9c89" />
+
+									<!-- Hair (longer and styled) -->
+
+									<!-- Eyes (larger with lashes) -->
+									<circle cx="44" cy="28" r="2" fill="#000" />
+									<circle cx="56" cy="28" r="2" fill="#000" />
+									<path d="M42,28 Q44,25 46,28" stroke="#000" stroke-width="0.5" fill="none" />
+									<!-- Left lash -->
+									<path d="M54,28 Q56,25 58,28" stroke="#000" stroke-width="0.5" fill="none" />
+									<!-- Right lash -->
+
+									<!-- Smile (softer and more defined) -->
+									<path d="M42,35 Q50,42 58,35 Q50,38 42,35" stroke="#E57373" stroke-width="2"
+										fill="none" />
+
+									<!-- Body -->
+									<rect x="40" y="45" width="20" height="25" fill="#4B99F6" />
+
+									<!-- Arm holding money (more elegant) -->
+									<path d="M60,50 Q75,45 70,65" stroke="#ff9c89" stroke-width="5" fill="none" />
+
+									<!-- Money (refined with a more detailed bill) -->
+									<rect x="70" y="55" width="16" height="12" fill="#00CC66" rx="1" ry="1" />
+									<circle cx="76" cy="59" r="1.5" fill="#FFF" />
+									<line x1="71" y1="59" x2="81" y2="59" stroke="#FFF" stroke-width="1" />
+									<line x1="71" y1="61" x2="81" y2="61" stroke="#FFF" stroke-width="1" />
+
+									<!-- Hand -->
+									<circle cx="68" cy="58" r="4" fill="#FFCC99" />
+
+									<!-- Other arm (more natural) -->
+									<path d="M40,50 Q30,60 32,70" stroke="#FFCC99" stroke-width="5" fill="none" />
+
+									<!-- Dress (adding a waistline and shape) -->
+									<path d="M40,45 Q50,55 60,45 Q55,70 45,70 Q40,60 40,45" fill="#4db8ff" />
+
+									<!-- Legs -->
+									<rect x="45" y="70" width="5" height="15" fill="#4db8ff" />
+									<rect x="50" y="70" width="5" height="15" fill="#4db8ff" />
+
+									<!-- Shoes -->
+									<rect x="45" y="85" width="5" height="3" fill="#000" />
+									<rect x="50" y="85" width="5" height="3" fill="#000" />
+								</svg>
+
+
+								<div class="text">
+									<a href="https://iclips.co.za/projects/iact" class="app-link responsive">
+										<h4 class="responsive">Imagine Act</h4>
+									</a>
+									<p class="responsive">Use your imagination to buy things and with the belief that it
+										could happen you will make it real in your experience to the degree of the
+										effort you put in.</p>
+								</div>
+							</li>
+							<li class="tag slide-in-right"
+								data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+								<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+									fill="none">
+									<rect x="10" y="10" width="80" height="60" fill="#005f99" />
+									<rect x="15" y="15" width="70" height="50" fill="#FFFFFF" />
+									<line x1="15" y1="20" x2="85" y2="20" stroke="#007acc" stroke-width="2" />
+									<line x1="15" y1="30" x2="85" y2="30" stroke="#007acc" stroke-width="2" />
+									<line x1="15" y1="40" x2="85" y2="40" stroke="#007acc" stroke-width="2" />
+									<line x1="15" y1="50" x2="85" y2="50" stroke="#007acc" stroke-width="2" />
+									<line x1="15" y1="60" x2="85" y2="60" stroke="#007acc" stroke-width="2" />
+								</svg>
+
+								<div class="text">
+									<a href="https://iclips.co.za/projects/kinleys" class="app-link responsive">
+										<h4 class="responsive">Window Blinds Installers</h4>
+									</a>
+									<p class="responsive">Transform your windows with stunning blinds. Experience unparalleled elegance and functionality with our custom blinds, tailored to fit For his organization has been less than last season into the hands of a man as of last name is enough as it is rising fast as a result of using an easy for his age for his family for now that film has a funny name of the user can resume has announced an almost as fast as I can fit for a fee for any window and style.</p>
+								</div>
+							</li>
+							<li class="tag slide-in-right"
+								data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+								<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+									fill="none">
+									<g fill="#007acc">
+										<!-- First layer -->
+										<rect x="2" y="2" width="20" height="8" />
+										<rect x="25" y="2" width="20" height="8" />
+										<rect x="48" y="2" width="20" height="8" />
+										<rect x="71" y="2" width="20" height="8" />
+										<!-- Second layer -->
+										<rect x="10" y="12" width="20" height="8" />
+										<rect x="33" y="12" width="20" height="8" />
+										<rect x="56" y="12" width="20" height="8" />
+										<rect x="79" y="12" width="20" height="8" />
+										<!-- Third layer -->
+										<rect x="2" y="22" width="20" height="8" />
+										<rect x="25" y="22" width="20" height="8" />
+										<rect x="48" y="22" width="20" height="8" />
+										<rect x="71" y="22" width="20" height="8" />
+										<!-- Fourth layer -->
+										<rect x="10" y="32" width="20" height="8" />
+										<rect x="33" y="32" width="20" height="8" />
+										<rect x="56" y="32" width="20" height="8" />
+										<rect x="79" y="32" width="20" height="8" />
+										<!-- Fifth layer -->
+										<rect x="2" y="42" width="20" height="8" />
+										<rect x="25" y="42" width="20" height="8" />
+										<rect x="48" y="42" width="20" height="8" />
+										<rect x="71" y="42" width="20" height="8" />
+									</g>
+								</svg>
+
+
+								<div class="text">
+									<a href="https://iclips.co.za/projects/constr" class="app-link responsive">
+										<h4 class="responsive">Construction Demo</h4>
+									</a>
+									<p class="responsive">For clients looking to build a unique home tailored to their
+										specific needs and preferences, Construction could offer custom home building
+										services.</p>
+								</div>
+							</li>
+							<li class="tag slide-in-right"
+								data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+								<svg width="100" height="100" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 2C10.3 2 9 3.3 9 5C9 6.7 12 12 12 12C12 12 15 6.7 15 5C15 3.3 13.7 2 12 2ZM12 14C10.3 14 9 15.3 9 17C9 19 12 22 12 22C12 22 15 19 15 17C15 15.3 13.7 14 12 14ZM12 0C13.6 0 15 1.4 15 3C15 4.6 13.7 6.9 12 10C10.3 6.9 9 4.6 9 3C9 1.4 10.4 0 12 0ZM12 16C10.3 16 9 17.3 9 19C9 20.3 10.3 22 12 22C13.7 22 15 20.3 15 19C15 17.3 13.7 16 12 16Z"
+										fill="#007acc" />
+								</svg>
+
+								<div class="text">
+									<a href="https://iclips.co.za/projects/bustracker" class="app-link responsive">
+										<h4 class="responsive">Bus Tracker</h4>
+									</a>
+									<p class="responsive">Track your bus in real-time. Never miss your bus again with
+										our real-time tracking system. Always arrive on time.</p>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-12 col-md-6">						
+						<div class="flex-column-center">
+							<img src="assets/images/left-image.png" alt="App symbol">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team-section">
+			<div class="background-container">
+				<div class="background-content">
+					<!-- Any content that you want as the background -->
+					<div class="snippet-container">
+						<div id="codeBlock1" class="code-block move-up" style="bottom: 10%; left: 40%; font-size: 24px; background-color: rgba(60, 126, 224, 0.687); z-index: 40;"></div>			
+	
+						<div id="codeBlock4" class="code-block move-down" style="top: 10%; right: 40%; font-size: 24px; background-color: rgba(179, 24, 24, 0.726); z-index: 30;"></div>				
+	
+						<div id="codeBlock2" class="code-block move-left" style="bottom: 40%; left: 10%; font-size: 24px; background-color: rgba(11, 206, 11, 0.787); z-index: 20;"></div>				
+	
+						<div id="codeBlock3" class="code-block move-right" style="top: 40%; right: 10%; font-size: 24px; background-color: rgba(23, 87, 226, 0.847); z-index: 10;"></div>				
+					</div>
+				</div>
+				<div class="foreground-content">		
+					<svg class="team-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="400px">
+						<!-- Central Teamwork Circle (represents unity) -->
+						<circle class="team-node" cx="400" cy="100" r="80" fill="rgba(255, 255, 255, 0.1)" />
+				
+						<!-- Dynamic Connections (lines representing collaboration) -->
+						<!-- <line class="connection-line line-1" x1="400" y1="80" x2="800" y2="400"></line> -->
+						<!-- <line class="connection-line line-2" x1="400" y1="80" x2="750" y2="300" />
+						<line class="connection-line line-3" x1="400" y1="80" x2="200" y2="600" />
+						<line class="connection-line line-4" x1="400" y1="80" x2="50" y2="300" /> -->
+					</svg>
+				
+					<!-- Orbiting Circles -->
+					<div class="circle-container">
+						<div class="small-node" style="top: 0; left: 50%;"></div>
+						<div class="small-node" style="top: 50%; left: 100%;"></div>
+						<div class="small-node" style="top: 100%; left: 50%;"></div>
+						<div class="small-node" style="top: 50%; left: 0;"></div>
+					</div>
+				
+					<div class="team-content">
+						<h2 class="responsive"><em>Meet our Team</em></h2>
+						<p class="responsive">Our amazing team is represented here, constantly collaborating and evolving together.</p>
+						<a href="team/" class="team-link responsive">View Team</a>
+					</div>	
+				</div>
+			</div>		
+		</section>
+
+		<section class="accordion-section">
+			<div class="container">
+				<div class="text-content">
+					<h3 class="title responsive">Something on your mind? Let's clear it up.</h3>
+					<p class="description responsive">
+						"I want to make you feel comfortable and at ease by answering important questions you might
+						have. Whether you're wondering about our experience, communication, or ongoing support, this
+						intuitive section is designed to address your concerns. Click on any question to find the answer
+						you're looking for—I'm here to make sure you feel confident in your decision."
+					</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="accordion">
+					<!-- Accordion Item 1 -->
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Do they have relevant experience?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">Our portfolio showcases projects across various industries, from
+								e-commerce to AI-powered apps, ensuring that we can meet your unique project needs.</p>
+						</div>
+					</div>
+
+					<!-- Accordion Item 2 -->
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">What does their portfolio look like?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We highlight our best work through detailed case studies, including
+								designs, functionalities, and user feedback, so you know what to expect.</p>
+						</div>
+					</div>
+
+					<!-- Accordion Item 3 -->
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Are their skills up to date?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We use cutting-edge tools and technologies like React, AI
+								integrations, and cloud solutions to ensure your app is built for the future.</p>
+						</div>
+					</div>
+
+					<!-- Accordion Item 4 -->
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">What do other clients say about them?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">Our clients consistently praise our communication, technical
+								expertise, and dedication to delivering quality work on time.</p>
+						</div>
+					</div>
+
+					<!-- Accordion Item 5 -->
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Do they communicate clearly?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We prioritize clear, consistent communication, keeping you updated on
+								every milestone to ensure your project’s success.</p>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Do they fit within my budget?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We offer flexible pricing models designed to fit your needs, ensuring
+								you get value for every penny spent.</p>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Will they deliver on time?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We adhere to strict deadlines and always keep you informed of the
+								project’s timeline and progress.</p>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Do they provide ongoing support?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">Our team is available for continuous support, from updates to
+								troubleshooting, ensuring long-term success.</p>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Can they adapt to my needs?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We understand that requirements can change. Our agile development
+								approach allows us to adapt swiftly to evolving needs.</p>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<button class="accordion-button" aria-expanded="false">
+							<h3 class="accordion-title responsive">Do they understand my business?</h5>
+							<span class="indicator">↓</span>
+						</button>
+						<div class="accordion-content">
+							<p class="responsive">We take the time to understand your business model and industry,
+								ensuring that our solutions align with your goals.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer id="contact-us">
+		<div class="center-heading">
+			<h2 class="responsive" style="color: black;"><em>Shall we have </em>a conversation?</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="responsive" style="color: white;">Discover the Power of <em>Iclips Tech</em></h3>
+					<p class="responsive">
+						At Iclips, we are your premier destination for custom digital software solutions. Our dedicated
+						team of developers specializes in crafting tailored software to meet your unique needs. Whether
+						you need sleek mobile apps or robust enterprise solutions, we are committed to delivering
+						excellence in every project.
+						<br><br>
+						**Are you ready to transform your ideas into reality?**
+						<strong>Contact us today and let's build something amazing together!</strong>
+					</p>
+					<div class="social">
+						<a href="https://wa.me/+27791873972?text=Hi%20Iclips%20Tech,%20" class="cta-button responsive">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-whatsapp" viewBox="0 0 16 16"
+								style="transform: scale(2.4); margin-right: 20px;">
+								<path
+									d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+							</svg>
+							<span>Contact Us on WhatsApp!</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="sub-footer">
+						<svg class="logo-wrapper" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 800 200" width="100%">
+							<defs>
+								<linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%">
+									<stop offset="0%" style="stop-color:#0f0f0f; stop-opacity:1" />
+									<stop offset="100%" style="stop-color:#110808; stop-opacity:1" />
+								</linearGradient>
+								<filter id="boxShadow" x="-20%" y="-20%" width="140%" height="140%">
+									<feDropShadow dx="10" dy="10" stdDeviation="10" flood-color="#000"
+										flood-opacity="0.5" />
+								</filter>
+								<clipPath id="clip-left-logo">
+									<rect x="70" y="50" width="100" height="100" rx="12" ry="12" />
+								</clipPath>
+								<clipPath id="clip-right-logo">
+									<rect x="630" y="50" width="100" height="100" rx="12" ry="12" />
+								</clipPath>
+								<radialGradient id="sparkleGradient">
+									<stop offset="0%" stop-color="white" stop-opacity="1" />
+									<stop offset="100%" stop-color="white" stop-opacity="0" />
+								</radialGradient>
+							</defs>
+
+							<rect x="44" y="44" width="712" height="112" fill="url(#darkGradient)"
+								filter="url(#boxShadow)" rx="20" ry="20" />
+							<g stroke="#ddd" stroke-width="2" stroke-opacity="0.3">
+								<line class="circuit-line" x1="150" y1="80" x2="200" y2="100" />
+								<line class="circuit-line" x1="200" y1="100" x2="150" y2="120" />
+								<line class="circuit-line" x1="600" y1="80" x2="550" y2="100" />
+								<line class="circuit-line" x1="550" y1="100" x2="600" y2="120" />
+							</g>
+
+							<circle class="sparkle sparkle-left" cx="150" cy="80" r="3" fill="url(#sparkleGradient)" />
+							<circle class="sparkle sparkle-right" cx="600" cy="80" r="3" fill="url(#sparkleGradient)" />
+
+
+							<image id="l_img" class="logo" alt="business logo with i in center of circuit"
+								href="assets/images/logoi.png" x="70" y="50" width="100" height="100"
+								clip-path="url(#clip-left-logo)" />
+
+							<image id="r_img" class="logo" alt="business logo with C forming an eclipse"
+								href="assets/images/logoc.png" x="630" y="50" width="100" height="100"
+								clip-path="url(#clip-right-logo)" />
+
+							<text x="400" y="120" fill="white" font-size="50" text-anchor="middle"
+								font-family="'Orbitron', sans-serif"
+								style="animation: text-glow 3s infinite ease-in-out;">
+								Innovative-Tech
+							</text>
+						</svg>
+						<p class="responsive">Copyright &copy; 2010 Iclips Tech Landing Page
+							| Designed by Us</p>
+						<strong>
+							<p class="responsive"><a href="https://www.iclips.co.za/terms">View our Terms and
+									Conditions</a></p>
+						</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="assets/js/anim.js"></script>
+	<script src="assets/js/events.js" defer></script>
+	<script src="assets/js/cube-scene.js" defer></script>
+	<script src="assets/js/script.js" defer></script>
+
 </body>
+
 </html>
