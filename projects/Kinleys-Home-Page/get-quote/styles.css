@@ -1,0 +1,202 @@
+:root {
+    --color-primary: #274ba9;
+    --color-secondary: #c18bbc;
+    --color-accent: #f7f7f7;
+    --color-background: #f2f2f2;
+    --color-hover: #4567b7;
+    --color-text: #333333;
+    --color-active: #66d9ef;
+    --color-linear-gradient: linear-gradient(to right, #274ba9, #c18bbc);
+    --color-linear-gradient-opa: linear-gradient(to right, #274ca9d1, #c18bbcd1);
+    --color-primary-light: #587fe5;
+    --color-primary-lighter: #789af5;
+    --color-contact: #cdc4c4;
+
+    --padding-content: 16px 24px;
+    --padding-card: 12px;
+    --padding-titlebar: var(--padding-content);
+    --padding-section: 24px;
+    
+    --titlebar-background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    --titlebar-background-hover: linear-gradient(45deg, #4e2ecfeb, #7b0f99eb);
+    --title-color: white;   
+
+    --button-background: #0078d4;
+    --button-text-color: #ffffff;
+    --button-hover-background: #005a9edd;
+    --button-hover-text-color: #f1f1f1;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--background-color);
+    width: 100%;    
+    
+    color: var(--text-color);
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    /* color: #484848; */
+    font-family: 'futura_ltbold', sans-serif;
+}
+
+a,button{outline: 0 !important;}
+a, a:hover,a:focus{ text-decoration: none}
+
+
+h1.responsive {
+    font-size: clamp(22px, 2vw + 0.75rem, 32px);
+}
+
+/******************* Navbar **************************/
+#navBar {
+    width: 100%;
+    height: 10%;    
+    box-shadow: 0 8px 15px var(--button-hover-background); 
+    background: var(--titlebar-background);
+    padding: var(--padding-titlebar);
+    position: relative;
+}
+#navBar:hover {
+    box-shadow: var(--color-hover);
+}
+
+.nav-content {
+    height: 60px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-content img {
+    height: 100%;
+    background: var(--color-background);
+    border-radius: 12px;
+    padding: var(--padding-card);
+    box-shadow: 0px 0px 8px #0000005e inset;
+    cursor: pointer;
+}
+
+.nav-content img:hover {
+    box-shadow: 0px 0px 8px #1696bad5 inset;
+    padding: var(--padding-content);
+
+}
+
+
+.nav-title {
+    font-size: large;
+    color: var(--color-accent)!important;
+}
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    color: var(--color-secondary);
+    font-size: clamp(14px, 2vw, 28px)
+}
+
+.logo h1 strong {
+    color: var(--color-primary);
+}
+
+.logo img {
+    height: 100%;
+    max-height: 80px;
+    width: auto;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+  
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    background: var(--button-background);
+    padding: var(--padding-titlebar);
+    border-radius: 7%;
+}
+.nav a:hover, .nav a:focus {
+    color: var(--color-hover);
+}
+
+.nav a.active {
+    border-bottom: 2px solid #6200ff;
+}
+
+/******************* /Navbar **************************/
+#quote-form {
+    width: 100%;
+    max-width: 220px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#quote-form div {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    height: 38px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#quote-result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
